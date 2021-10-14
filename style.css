@@ -1,0 +1,85 @@
+/* Variáveis */
+:root {
+  --blue-ligth: #40407a ;
+  --blue: #2980b9;
+  --blue-dark: #2c2c54;
+  --red-ligth:  #e74c3c ;
+  --red: #c0392b;
+  --cinza-dark: #a29bfe;
+  --branco: #ecf0f1;
+  --pink: #e84393
+}
+
+/* Fonte */
+.font-size-25 {font-size: 25px}
+
+/* Colors */
+.color-blue-ligth{color: var(--blue-ligth)}
+.color-red-ligth{color: var(--red-ligth)}
+
+/* BGs */
+body{background-image: linear-gradient(to right bottom, #a29bfe, #948bf9, #877cf3, #7a6ced, #6c5ce7);}
+
+.bg-red {background: var(--red)}
+.bg-blue {background: var(--blue)}
+.bg-blue-dark {background: var(--blue-dark)}
+.bg-branco{background: var(--branco)}
+.bg-pink{background: var(--pink)}
+
+/* Classes aux */
+.marcar-vez { 
+  border: 5px solid var(--pink); 
+  color: var(--pink)
+}
+.z-index-100 {z-index: 100;}
+.rodada {
+  background: var(--pink);
+  color: var(--branco);
+  border-radius: 50px;
+}
+.jogo {
+  border-radius: 26px;
+  padding: 14px;
+  -webkit-box-shadow: 0px 6px 8px -4px rgba(0,0,0,0.37);
+  -moz-box-shadow: 0px 6px 8px -4px rgba(0,0,0,0.37);
+  box-shadow: 0px 6px 8px -4px rgba(0,0,0,0.37);
+}
+.width-100{width: 100px;}
+
+/* Style table */
+.table-hash tr:nth-child(1) > td:nth-child(1), tr:nth-child(1) > td:nth-child(2) {
+  border-color: var(--blue-dark);
+  border-right-style: solid; 
+  border-bottom-style: solid; 
+  border-top-style: none;
+}
+.table-hash tr:nth-child(1) > td:nth-child(3) {
+  border-color: var(--blue-dark);
+  border-bottom-style: solid; 
+  border-top-style: none;
+}
+.table-hash tr:nth-child(2) > td:nth-child(1), tr:nth-child(2) > td:nth-child(2) {
+  border-color: var(--blue-dark);
+  border-right-style: solid; 
+  border-bottom-style: solid; 
+}
+.table-hash tr:nth-child(2) > td:nth-child(3) {
+  border-color: var(--blue-dark);
+  border-bottom-style: solid;
+}
+.table-hash tr:nth-child(3) > td:nth-child(1), tr:nth-child(3) > td:nth-child(2) {
+  border-color: var(--blue-dark);
+  border-right-style: solid
+}
+.table-hash tr > td {
+  height: 90px; 
+  cursor: pointer; 
+  text-align: center; 
+  vertical-align: middle !important; 
+  max-width: 26px
+}
+.table-hash tr > td {
+  font-size: 37px;
+  font-weight: 600;
+}
+.table-hash td[marcado="true"]{cursor:default}
